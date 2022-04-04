@@ -30,7 +30,7 @@ namespace MultiplicationTable
             {
                 for (int j = 0; j < 10; ++j)
                 {
-                    string comma = (i == 9 && j == 9) ? "" : ", ";
+                    string comma = (j == 9) ? "" : ", ";
                     string extraSpace = (Table[j, i] < 10) ? " " : "";
                     rows[i] += extraSpace + Table[i, j] + comma;
                 }
